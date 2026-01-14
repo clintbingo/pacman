@@ -1,13 +1,7 @@
-.grid{
-    width: 560px;
-    height: 560px;
-    border: solid black;
+body{
+    text-align: center;
 }
 
-.grid div{
-    width: 20px;
-    height: 20px;
-    border: solid red;
-    box-sizing: border-box;
-
+#board{
+    background-color: black;
 }
