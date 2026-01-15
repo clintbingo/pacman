@@ -16,35 +16,37 @@ let pacmanLeftImage;
 let pacmanRightImage;
 let wallImage;
 
+function loadImages(){
+    wallImage = new Image();
+    wallImage.src = "./wall.png";
+
+    blueGhostImage = new Image();
+    blueGhostImage.src = "./blueGhost.png";
+    orangeGhostImage = new Image();
+    orangeGhostImage.src = "orangeGhost.png";
+    pinkGhostImage = new Image();
+    pinkGhostImage.src = "pinkGhost.png";
+    blueGhostImage = new Image();
+    redGhostImage.src = "redGhost.png";
+
+    pacmanUpImage = new Image();
+    pacmanUpImage.src = "pacmanUp.png";
+    pacmanDownImage = new Image();
+    pacmanDownImage.src = "pacmanDown.png";
+    pacmanLeftImage = new Image();
+    pacmanLeftImage.src = "pacmanLeft.png";
+    pacmanRightImage = new Image();
+    pacmanRightImage.src = "pacmanRight.png";
+
+
+}
 
 window.onload = function (){
     board = document.getElementById('board');
     board.height = boardHeight;
     board.width = boardWidth;
     context = board.getContext("2d");
+
+    loadImages()
 }
 
-function loadImages(){
-    wallImage = new Image();
-    wallImage.src = "./wall.png";
-
-    blueGhostImage = new Image();
-    blueGhostImage.src = "./blueGhost.png"
-    orangeGhostImage = new Image();
-    orangeGhostImage.src = "./orangeGhost.png"
-    pinkGhostImage = new Image();
-    pinkGhostImage.src = "./pinkGhost.png"
-    blueGhostImage = new Image();
-    redGhostImage.src = "./redGhost.png"
-
-    pacmanUpImage = new Image();
-    pacmanUpImage.src = "./pacmanUp.png"
-    pacmanDownImage = new Image();
-    pacmanDownImage.src = "./pacmanDown.png"
-    pacmanLeftImage = new Image();
-    pacmanLeftImage.src = "./pacmanLeft.png"
-    pacmanRightImage = new Image();
-    pacmanRightImage.src = "./pacmanRight.png"
-
-
-}
